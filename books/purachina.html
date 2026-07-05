@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>本の詳細 - 読書ログ</title>
+
+        <style>
+            body {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .back-link {
+                display: inline-block;
+                margin-bottom: 20px;
+                padding: 8px 15px;
+                background-color: #f0f0f0;
+                color: #333;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+            .back-link:hover {
+                background-color: #e0e0e0;
+            }
+
+            .book-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: space-between;
+                align-items: flex-start;
+                border-bottom: 2px solid #3ccc;
+                padding-bottom: 20px;
+                margin-bottom: 30px;
+            }
+
+            .book-info-left {
+                flex: 1;
+                padding-right: 30px;
+            }
+
+            .title-area {
+                display: flex;
+                align-items: baseline;
+                flex-wrap: wrap;
+                gap: 15px;
+                margin-bottom: 15px;
+            }
+
+            .book-title {
+                font-size: 2em;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            .book-meta {
+                font-size: 1.1em;
+                color: #555;
+            }
+
+            .book-rating-date {
+                font-size: 1.1em;
+                margin-top: 10px;
+            }
+
+            .start-rating {
+                color: #ff9900;
+                font-size: 1.3em;
+                margin-right: 20px;
+            }
+
+            .book-image-right {
+                width: 220px;
+                flex-shrink: 0;
+            }
+
+            .book-image-right img {
+                width: 100%;
+                height: auto;
+                display: block;
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            h3{
+                border-left: 5px solid #333;
+                padding-left: 10px;
+                margin-top: 40px; 
+            }
+
+        </style>
+    </head>
+    <body>
+        <a href="index.html" class="back-link">← 一覧に戻る</a>
+
+        <div class="book-header">
+
+            <div class="book-info-left">
+                <div class="title-area">
+                    <h1 class="book-title">プラチナデータ</h1>
+                    <span class="book-meta">著者: 東野 圭吾/出版社: 幻冬舎</span>
+                </div>
+
+                <div class="book-rating-date">
+                    <span class="start-rating">★★★★★</span>
+                    <span class="book-meta">読了日: 2025/08</span>
+                </div>
+            </div>
+
+            <div class="book-image-right">
+                <img src="images/purachina.jpg" alt="プラチナデータ">
+            </div>
+        </div>
+
+        <div class="book-content">
+            <h3>概要</h3>
+            <p></p>
+
+            <h3>感想</h3>
+            <p></p>
+        </div>
+    </body>
