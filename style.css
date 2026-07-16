@@ -2,12 +2,18 @@ body {
     background-color: #fff5e0;
     color: #1a0b08;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header {
@@ -34,18 +40,22 @@ nav ul {
     margin: 0;
     padding: 0;
     justify-content: center;
+    gap: 50px;
 }
 
 nav li a {
     display: block;
-    padding: 15px 30px;
+    padding: 10px 5px;
     color: #1a0b08;
     text-decoration: none;
     font-weight: bold;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
 }
 
 nav li a:hover {
-    background-color: #ccc;
+    background-color: transparent;
+    border-bottom: 3px solid #1a0b08;
 }
 
 footer {
