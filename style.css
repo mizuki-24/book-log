@@ -61,15 +61,26 @@ nav li a:hover {
 footer {
     background-color: #1a0b08;
     color: #fff5e0;
+    margin-top: 60px;    
+}
+
+.footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 20px;
     text-align: left;
-    padding: 40px 10%;
-    margin-top: 60px;
 }
 
-footer p {
-    margin: 5px 0;
+.footer-inner h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
 }
 
+.footer-inner p {
+    margin: 3px 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
 
 .year-group {
     margin-bottom: 40px;
