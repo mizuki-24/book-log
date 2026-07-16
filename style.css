@@ -118,11 +118,6 @@ ul li {
     color: #1a0b08;
 }
 
-ul li:hover {
-    color: #d300e6;
-    cursor: pointer;
-}
-
 /*　/book用 */
 .back-link {
     display: inline-block;
