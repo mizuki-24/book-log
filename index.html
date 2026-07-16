@@ -1,141 +1,107 @@
 <!doctype html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <title>読書ログ</title>
+    <title>Book Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <style>
-        .year-group {
-            margin-bottom: 40px;
-        }
-
-        .year-title {
-            font-size: 1.2em;
-            border-bottom: 2px solid #ccc;
-            margin-bottom: 15px;
-            display: inline-block;
-        }
-
-        .book-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .book-item {
-            width: calc(25% - 15px);
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-
-        .book-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        .book-item:hover {
-            transform: scale(1.08);
-        }
-
-        body {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-    </style>
-  </head>
-  <body>
-    <header>読書記録</header>
+<body>
+    <header>
+        <h1>Book Log</h1>
+    </header>
     <hr />
     <nav>
         <ul>
-            <li><a href="#概要">概要</a></li>
-            <li><a href="#読書記録">読書記録</a></li>
-            <li><a href="#おすすめの著者">おすすめの著者</a></li>
-            <li><a href="#これから読みたい本">これから読みたい本</a></li>
-            <li><a href="#Amazonリンク">Amazonリンク</a></li>
+            <li><a href="#" class="tab-button active" data-id="tab-record">読書記録</a></li>
+            <li><a href="#" class="tab-button" data-id="tab-wishlist">これから読みたい本</a></li>
 
         </ul>
     </nav>
-    <h1>読書記録</h1>
-    <h2 id="概要">概要</h2>
-    <p>自分が何の本をいつ読んだのかを忘れてしまうので記録する目的で作成。</p>
-    <p>たいていの本は一日で読み切ってしまうので記録がしやすくて助かりました。</p>
-    <p>学校の課題で読んだ本が多いですが、やっぱり本を読むのは情報量が程よくて楽しいです。</p>
-    <p>この調子で積読を減らしていきたいと思います。</p>
 
-    <h2 id="読書記録">読書記録</h2>
-    
-    <div class="year-group">
-        <h3 class="year-title">～2025年</h3>
+    <main>
+        <div id="tab-record" class="tab-content active">
+            <div class="year-group">
 
-        <div class="book-grid">
-            <a href="books/arienai.html" class="book-item">
-                <img src="images/arienai.jpg" alt="アリエナクナイ科学ノ教科書">
-            </a>
+                <h3 class="year-title">2026年</h3>
 
-            <a href="books/purachina.html" class="book-item">
-                <img src="images/purachina.jpg" alt="プラチナ・データ">
-            </a>
+                <div class="book-grid">
 
+                    <a href="books/bakudan.html" class="book-item">
+                        <img src="images/bakudan.jpg" alt="爆弾">
+                    </a>
+
+                    <a href="books/ningen.html" class="book-item">
+                        <img src="images/ningen.jpg" alt="人間失格">
+                    </a>
+
+                    <a href="books/raichi.html" class="book-item">
+                        <img src="images/raichi.jpg" alt="ライチ光クラブ">
+                    </a>
+
+                    <a href="books/nouzei.html" class="book-item">
+                        <img src="images/nouzei.jpg" alt="納税、のち、ヘラクレスメス">
+                    </a>
+
+                </div>
+
+                <h3 class="year-title">～2025年</h3>
+
+                <div class="book-grid">
+                    <a href="books/tetugaku.html" class="book-item">
+                        <img src="images/tetugaku.jpg" alt="14歳からの哲学">
+                    </a>
+
+                    <a href="books/nazotoki.html" class="book-item">
+                        <img src="images/nazotoki.jpg" alt="謎解きはディナーの後で">
+                    </a>
+
+                    <a href="books/gohunngo.html" class="book-item">
+                        <img src="images/gohunngo.jpg" alt="五分後に意外な結末　シリーズ">
+                    </a>
+
+                    <a href="books/karada.html" class="book-item">
+                        <img src="images/karada.jpg" alt="カラダ探し">
+                    </a>
+
+                    <a href="books/arienai.html" class="book-item">
+                        <img src="images/arienai.jpg" alt="アリエナクナイ科学ノ教科書">
+                    </a>
+
+                    <a href="books/purachina.html" class="book-item">
+                        <img src="images/purachina.jpg" alt="プラチナ・データ">
+                    </a>
+
+                </div>
+
+            </div>
         </div>
 
-        <h3 class="year-title">2026年</h3>
-        
-        <div class="book-grid">
-
-            <a href="books/bakudan.html" class="book-item">
-                <img src="images/bakudan.jpg" alt="爆弾">
-            </a>
-
-            <a href="books/ningen.html" class="book-item">
-                <img src="images/ningen.jpg" alt="人間失格">
-            </a>
-
-            <a href="books/raichi.html" class="book-item">
-                <img src="images/raichi.jpg" alt="ライチ光クラブ">
-            </a>
-
-            <a href="books/boku.html" class="book-item">
-                <img src="images/boku.jpg" alt="ぼくらの光クラブ　上">
-            </a>
-
-            <a href="books/boku2.html" class="book-item">
-                <img src="images/boku2.jpg" alt="ぼくらの光クラブ　下">
-            </a>
-
-            <a href="books/nouzei.html" class="book-item">
-                <img src="images/nouzei.jpg" alt="納税、のち、ヘラクレス">
-            </a>
-
-            <a href="books/meisyou.html" class="book-item">
-                <img src="images/meisyou.jpg" alt="名称未設定ファイル">
-            </a>
-
-            
-
+        <div id="tab-wishlist" class="tab-content">
+            <ul>
+                <li>プロジェクト・ヘイル・メアリー</li>
+                <li>車輪の下</li>
+                <li>こころ</li>
+                <li>痴人の愛</li>
+                <li>斜陽</li>
+                <li>罪と罰</li>
+                <li>ただしい人類滅亡計画 反出生主義をめぐる物語</li>
+                <li>走り出したら止まらない</li>
+                <li>キリンに雷が落ちてどうする　少し考える日々</li>
+                <li>かわいそ笑</li>
+                <li>崩れる脳を抱きしめて</li>
+                <li>ライ麦畑で捕まえて</li>
+            </ul>
         </div>
-    </div>
+    </main>
+    <footer>
+        <h2>Book Log</h2>
+        <p>読んだ本を忘れてしまうから記録する目的で作成</p>
+        <p>最終更新日　2026/07/16</p>
+    </footer>
 
-    <h2 id="おすすめの著者">おすすめの著者</h2>
-
-    <p>品田　遊</p>
-    <p>東野　圭吾</p>
-    <p>太宰　治</p>
-
-    <h2 id="これから読みたい本">これから読みたい本</h2>
-    <ul>
-        <li>ただしい人類滅亡計画 反出生主義をめぐる物語　　品田 遊</li>
-        <li>走り出したら止まらない　　品田 遊</li>
-        <li>キリンに雷が落ちてどうする 少し考える日々　　品田 遊</li>
-        <li>かわいそ笑　　梨</li>
-        <li>崩れる脳を抱きしめて　　知念 実希人</li>
-    </ul>
-
-    <h2 id="Amazonリンク">Amazonリンク</h2>
-
-    <footer>最終更新日　2026/07/03</footer>
+    <script src="script.js"></script>
 </body>
+
 </html>

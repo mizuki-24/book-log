@@ -1,122 +1,65 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8" />
-        <title>本の詳細 - 読書ログ</title>
+<head>
+    <meta charset="utf-8" />
+    <title>ライチ光クラブ - Book Log</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Log</h1>
+    </header>
 
-        <style>
-            body {
-                max-width: 900px;
-                margin: 0 auto;
-                padding: 20px;
-            }
-
-            .back-link {
-                display: inline-block;
-                margin-bottom: 20px;
-                padding: 8px 15px;
-                background-color: #f0f0f0;
-                color: #333;
-                text-decoration: none;
-                border-radius: 5px;
-            }
-
-            .back-link:hover {
-                background-color: #e0e0e0;
-            }
-
-            .book-header {
-                display: flex;
-                justify-content: space-between;
-                align-items: space-between;
-                align-items: flex-start;
-                border-bottom: 2px solid #3ccc;
-                padding-bottom: 20px;
-                margin-bottom: 30px;
-            }
-
-            .book-info-left {
-                flex: 1;
-                padding-right: 30px;
-            }
-
-            .title-area {
-                display: flex;
-                align-items: baseline;
-                flex-wrap: wrap;
-                gap: 15px;
-                margin-bottom: 15px;
-            }
-
-            .book-title {
-                font-size: 2em;
-                font-weight: bold;
-                margin: 0;
-            }
-
-            .book-meta {
-                font-size: 1.1em;
-                color: #555;
-            }
-
-            .book-rating-date {
-                font-size: 1.1em;
-                margin-top: 10px;
-            }
-
-            .start-rating {
-                color: #ff9900;
-                font-size: 1.3em;
-                margin-right: 20px;
-            }
-
-            .book-image-right {
-                width: 220px;
-                flex-shrink: 0;
-            }
-
-            .book-image-right img {
-                width: 100%;
-                height: auto;
-                display: block;
-                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-            }
-
-            h3{
-                border-left: 5px solid #333;
-                padding-left: 10px;
-                margin-top: 40px; 
-            }
-
-        </style>
-    </head>
-    <body>
-        <a href="index.html" class="back-link">← 一覧に戻る</a>
+    <main>
+        <a href="../index.html" class="back-link">← 一覧に戻る</a>
 
         <div class="book-header">
-
-            <div class="book-info-left">
-                <div class="title-area">
-                    <h1 class="book-title">ライチ光クラブ</h1>
-                    <span class="book-meta">著者: 古屋兎丸/出版社: 太田出版</span>
-                </div>
-
-                <div class="book-rating-date">
-                    <span class="start-rating">★★★★★</span>
-                    <span class="book-meta">読了日: 2026/5</span>
-                </div>
+            <h2 class="book-title">ライチ光クラブ</h2>
+            
+            <div class="book-author-row">
+                <p class="book-author">著者: 古屋兎丸 / 出版社: 太田出版</p>
+                <a href="https://www.amazon.co.jp/%E3%83%A9%E3%82%A4%E3%83%81%E2%98%86%E5%85%89%E3%82%AF%E3%83%A9%E3%83%96-f%C3%97COMICS-%E5%8F%A4%E5%B1%8B-%E5%85%8E%E4%B8%B8/dp/4778320174/ref=sr_1_2_sspa?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2KWNOK00F1XQW&dib=eyJ2IjoiMSJ9.miaKZzee9bTGC6WnFnPodVmL-eNndyzb2aPlygJwKNdijD3yhzpmgwf_sqAnfX2z9NRSF4cWXbT_Oi1ZvogtsaslQpWH_V8NLhOUmhjs8kNpALwutLZovaExliuD0Yq8L1mLKYNMBx8c0mkx8-HFhKMzgdX9r1c5oaxa5m4iUKgi2TRiuf42A7DGZcBiPiZ5tjpjhNMO36Om5TQ6-y84eSo8Mxm0HncHkqxqshtDcHWw3xhEzRtPbAxkIPQC6Tw04p6NylXdkwASRgICtjNL_pNAwzZTTVZKvY_PHHRiFJM.R0h5WOIBAW8JHVWYMahFjFIMAZHaxE7HVj5PfvHitFE&dib_tag=se&keywords=%E3%83%A9%E3%82%A4%E3%83%81%E5%85%89%E3%82%AF%E3%83%A9%E3%83%96&qid=1784084099&sprefix=%E3%83%A9%E3%82%A4%E3%83%81%E5%85%89%E3%82%AF%E3%83%A9%E3%83%96%2Caps%2C200&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="amazon-btn">Amazon</a>
             </div>
 
+            <div class="book-date-rating">
+                <span class="star-rating">★★★★★</span>
+                <small>読了日: 2026年5月</small>
+            </div>
+
+            <details class="book-summary-accordion">
+                <summary class="summary-button">概要</summary>
+                <div class="summary-content">
+                    <p>
+                        工場の煙に覆われた螢光町の片隅にある、「光クラブ」と名づけられた少年たちの秘密基地。
+                        <br>
+                        その場所で、ある崇高なる目的のために作られた「機械」が目を覚ました。「機械」の正体とは――！？
+                        <br>
+                        80年代、伝説の劇団「東京グランギニョル」の舞台を、鬼才・古屋兎丸がマンガ化した衝撃作。
+                    </p>
+                </div>
+            </details>
+
             <div class="book-image-right">
-                <img src="images/raichi.jpg" alt="ライチ光クラブの表紙">
+                <img src="../images/raichi.jpg" alt="ライチ光クラブの表紙">
             </div>
         </div>
 
         <div class="book-content">
-            <h3>概要</h3>
-            <p></p>
-
             <h3>感想</h3>
-            <p></p>
+            <p>
+                物理的なグロテスクさ、人間関係のグロテスクさが調和していて読みごたえがあった。
+                <br>
+                脳を焼かれるような憧れ、依存、主従等、様々な暗い関係性が巧みに表現されていた。
+                <br>
+                登場人物が学ランを着ていること、工場の中で起こる話である特性上黒の表現が巧みで、より一層本書の暗い雰囲気を後押しできていて物語に入りこめた。
+            </p>
         </div>
-    </body>
+    </main>
+
+    <footer>
+        <h2>Book Log</h2>
+        <p>読んだ本を忘れてしまうから記録する目的で作成</p>
+        <p><small>最終更新日 2026/07/16</small></p>
+    </footer>
+</body>
+</html>

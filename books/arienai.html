@@ -1,122 +1,61 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8" />
-        <title>本の詳細 - 読書ログ</title>
+<head>
+    <meta charset="utf-8" />
+    <title>アリエナクナイ科学ノ教科書 - Book Log</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Log</h1>
+    </header>
 
-        <style>
-            body {
-                max-width: 900px;
-                margin: 0 auto;
-                padding: 20px;
-            }
-
-            .back-link {
-                display: inline-block;
-                margin-bottom: 20px;
-                padding: 8px 15px;
-                background-color: #f0f0f0;
-                color: #333;
-                text-decoration: none;
-                border-radius: 5px;
-            }
-
-            .back-link:hover {
-                background-color: #e0e0e0;
-            }
-
-            .book-header {
-                display: flex;
-                justify-content: space-between;
-                align-items: space-between;
-                align-items: flex-start;
-                border-bottom: 2px solid #3ccc;
-                padding-bottom: 20px;
-                margin-bottom: 30px;
-            }
-
-            .book-info-left {
-                flex: 1;
-                padding-right: 30px;
-            }
-
-            .title-area {
-                display: flex;
-                align-items: baseline;
-                flex-wrap: wrap;
-                gap: 15px;
-                margin-bottom: 15px;
-            }
-
-            .book-title {
-                font-size: 2em;
-                font-weight: bold;
-                margin: 0;
-            }
-
-            .book-meta {
-                font-size: 1.1em;
-                color: #555;
-            }
-
-            .book-rating-date {
-                font-size: 1.1em;
-                margin-top: 10px;
-            }
-
-            .start-rating {
-                color: #ff9900;
-                font-size: 1.3em;
-                margin-right: 20px;
-            }
-
-            .book-image-right {
-                width: 220px;
-                flex-shrink: 0;
-            }
-
-            .book-image-right img {
-                width: 100%;
-                height: auto;
-                display: block;
-                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-            }
-
-            h3{
-                border-left: 5px solid #333;
-                padding-left: 10px;
-                margin-top: 40px; 
-            }
-
-        </style>
-    </head>
-    <body>
-        <a href="index.html" class="back-link">← 一覧に戻る</a>
+    <main>
+        <a href="../index.html" class="back-link">← 一覧に戻る</a>
 
         <div class="book-header">
-
-            <div class="book-info-left">
-                <div class="title-area">
-                    <h1 class="book-title">アリエナクナイ科学ノ教科書</h1>
-                    <span class="book-meta">著者:くられ /出版社:ソシム </span>
-                </div>
-
-                <div class="book-rating-date">
-                    <span class="start-rating">★★★★☆</span>
-                    <span class="book-meta">読了日:2017? </span>
-                </div>
+            <h2 class="book-title">アリエナクナイ科学ノ教科書</h2>
+            
+            <div class="book-author-row">
+                <p class="book-author">著者: くられ / 出版社: ソシム</p>
+                <a href="https://www.amazon.co.jp/%E3%82%A2%E3%83%AA%E3%82%A8%E3%83%8A%E3%82%AF%E3%83%8A%E3%82%A4%E7%A7%91%E5%AD%A6%E3%83%8E%E6%95%99%E7%A7%91%E6%9B%B8-%E7%A9%BA%E6%83%B3%E8%A8%AD%E5%AE%9A%E3%82%92%E8%AA%AD%E3%81%BF%E8%A7%A3%E3%81%8F31%E8%AC%9B-%E3%81%8F%E3%82%89%E3%82%8C/dp/4802610904/ref=sr_1_21?crid=1GVDAC3OF0M77&dib=eyJ2IjoiMSJ9.dYFiwzod9ectfTJLx_eV7WvDpVRp5oPWwpDxTxRIvRNVgDuG5xlR4mGe5Tce-aBawIfubIJSUek-smUcbO3cyyGRz78WxDtpB04fffB67p1lPTgDtzh4mVUCXnhPxA47oM2fywDli_BVm7l7vAc0rSFOpssvrIg80Xpqnl5gDdPyNVkGRcHLduuEfaU_zxtNoKwX7vGOUWmuJQBgLGphp08jiiIkLXhfiL3w1Kx4qgzHqUBS8gcnhCgj0fT276oMRs5Jjuot0XIZ79fGzL6oonb4jualJyaocYVBzg6AeE0.WMvbxY4wEg0yqf3goWRnsy0OIZHm7HdWY0hh-eVczNQ&dib_tag=se&keywords=%E3%82%A2%E3%83%AA%E3%82%A8%E3%83%8A%E3%82%A4%E7%90%86%E7%A7%91&qid=1784183746&sprefix=%E3%82%A2%E3%83%AA%E3%82%A8%E3%83%8A%E3%82%A4%2Caps%2C194&sr=8-21" target="_blank" class="amazon-btn">Amazon</a>
             </div>
 
+            <div class="book-date-rating">
+                <span class="star-rating">★★★☆☆</span>
+                <small>読了日: おそらく2017年</small>
+            </div>
+
+            <details class="book-summary-accordion">
+                <summary class="summary-button">概要</summary>
+                <div class="summary-content">
+                    <p>
+                        「不老不死の存在」「人造人間」「巨大モンスター」「ナノマシン」などなど、マンガやアニメやゲームなどでお馴染みの存在ながら
+                        <br>
+                        現実ではお目にかかれない存在の数々。そんな空想世界の技術・設定を現代科学で読み解くと……?
+                    </p>
+                </div>
+            </details>
+
             <div class="book-image-right">
-                <img src="images/arienai.jpg" alt="アリエナクナイ科学ノ教科書">
+                <img src="../images/arienai.jpg" alt="アリエナクナイ科学ノ教科書の表紙">
             </div>
         </div>
 
         <div class="book-content">
-            <h3>概要</h3>
-            <p></p>
-
             <h3>感想</h3>
-            <p></p>
+            <p>
+                元々くられが好きだったので購入。科学に少しでも興味がある人なら必ず楽しめる一冊。
+                <br>
+                くられはほかにも様々な本を執筆しているが、この本が断然わかりやすい内容になっている。
+            </p>
         </div>
-    </body>
+    </main>
+
+    <footer>
+        <h2>Book Log</h2>
+        <p>読んだ本を忘れてしまうから記録する目的で作成</p>
+        <p><small>最終更新日 2026/07/16</small></p>
+    </footer>
+</body>
+</html>
